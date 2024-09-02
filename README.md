@@ -1,50 +1,30 @@
-# MAS-Platform-C
+# Teste de Viabilidade de Sistemas MultiAgent
 
-![](https://img.shields.io/badge/lang-C-green)
-![](https://img.shields.io/badge/category-Artificial%20Intelligence-blue)
+## Descrição
 
-- [Introduction](#introduction)
-- [Demo: Building & Running](#demo--building---running)
-  * [Linux](#linux)
+Este projeto explora a viabilidade de sistemas multiagentes na linguagem C, com um foco específico na simulação do comportamento de uma livraria. O projeto foi apresentado à Universidade Federal do Amazonas (UFAM) e utiliza a biblioteca Pthread para gerenciamento de threads, implementando conceitos de sistemas multiagentes com uma abordagem orientada a objetos.
 
-## Introduction
+## Tecnologias Utilizadas
 
-Project developed by a Scientific Initiation team with a scholarship from [SUPER](https://super.ufam.edu.br/), a partnership between Samsung and the [Federal University of Amazonas (UFAM)](https://ufam.edu.br/) that aims to stimulate training and research.
+- **Linguagem C**: Usada para o desenvolvimento do sistema, oferecendo controle de baixo nível e desempenho eficiente.
+- **Biblioteca Pthread**: Facilitadora do gerenciamento de threads e sincronização entre os agentes, permitindo a execução concorrente e a comunicação entre eles.
+- **Conceitos de Sistemas MultiAgente**: Implementação de agentes autônomos que simulam o comportamento de uma livraria, interagindo e colaborando para gerenciar livros, clientes e transações.
 
-This project is a **PoC** to research the viability of making an Intelligent [Multi-Agent System (**MAS**)](https://en.wikipedia.org/wiki/Multi-agent_system) in C Language.
+## Funcionalidades
 
-The project code implements a **MAS** development platform. Through the platform it is possible to develop customized MAS systems, control their behavior, interactions and way of execution.
+- **Simulação de Livraria**: Agentes representam diferentes componentes de uma livraria, como funcionários e clientes, interagindo para realizar operações como compra, venda e gerenciamento de estoque.
+- **Execução Concorrente**: Utilização da biblioteca Pthread para possibilitar a execução simultânea de múltiplos agentes, refletindo um ambiente de livraria dinâmico e ativo.
+- **Comunicação entre Agentes**: Implementação de mecanismos de comunicação e sincronização entre agentes para garantir a coordenação das atividades e a gestão eficaz das operações da livraria.
+- **Análise de Viabilidade**: Avaliação do desempenho e da eficácia do sistema multiagente na simulação de uma livraria, fornecendo insights sobre a aplicabilidade dos sistemas multiagentes em cenários reais.
 
-In this **PoC**, a **MAS** demo was developed to test the capabilities of the platform. This demo can be built and run. For more information see the section: [Demo: Building & Running](#demo--building---running)
+## Estrutura do Projeto
 
-During the tests, the platform proved to be stable. Even with several agents running at the same time and interacting with each other, the program remained stable and produced the expected results. Further improvements and tests are required.
+- **Código-Fonte**: Desenvolvido em C, com foco em uma abordagem orientada a objetos para simular a livraria e uso extensivo da biblioteca Pthread para gerenciamento de threads.
+- **Documentação**: Inclui uma análise detalhada da implementação, testes realizados e resultados obtidos.
+- **Exemplos e Testes**: Fornece exemplos de como executar e testar o sistema multiagente, com scripts e instruções detalhadas.
 
-## Demo: Building & Running
+## Como Executar
 
-### Linux
-
-To build the project, make sure you have `gcc` and `make` installed. To check, you can run the commands:
-
-```console
-gcc --version
-make --version
-```
-
-If the version of `gcc` and `make` appears, you are good to go. Otherwise, you can install them via apt:
-
-```console
-sudo apt update
-sudo apt install build-essential
-```
-
-With everything ready, it's time to build. To do so, run `make` in the project root directory:
-
-```console
-make
-```
-
-The binary `cmas` will be created, and can be executed by running:
-
-```console
-./cmas
-```
+1. **Clone o repositório**:
+   ```bash
+   git clone <https://github.com/Nelson-esilva/MAS-Platform-C.git>
